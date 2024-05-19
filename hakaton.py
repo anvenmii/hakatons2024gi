@@ -89,24 +89,24 @@ def run_quiz(questions):
         print("Studying is cool")
 
 
-question1 = MultipleChoice("What does 'sveiki' mean?", ["Hi", "Bye", "Apple"], "Hi")
-question2 = MultipleChoice("What does 'paldies' mean?", ["Bye", "Thanks", "Rat"], "Thanks")
-question3 = MultipleChoice("What does 'lapsa' mean?", ["Fox", "Cat", "Eagle"], "Fox")
-question4 = MultipleChoice("What does 'ūdens' mean?", ["Air", "Earth", "Water"], "Water")
-question5 = MultipleChoice("What does 'saule' mean?", ["Moon", "Star", "Sun"], "Sun")
-question6 = MultipleChoice("What does 'galds' mean?", ["Chair", "Computer", "Table"], "Table")
-question7 = MultipleChoice("What does 'puķe' mean?", ["Flower", "Fruit", "Tree"], "Flower")
-question8 = MultipleChoice("What does 'putns' mean?", ["Fish", "Dog", "Bird"], "Bird")
-question9 = MultipleChoice("What does 'māja' mean?", ["Building", "Road", "House"], "House")
-question10 = MultipleChoice("What does 'koks' mean?", ["Stone", "Tree", "Metal"], "Tree")
+question1 = MultipleChoice("How to say 'Hi' in Latvian?", ["Lapsa", "Ata", "Sveiki"], "Sveiki")
+question2 = MultipleChoice("How to say 'Thanks' in Latvian?", ["Lūdzu", "Paldies", "Kaķis"], "Paldies")
+question3 = MultipleChoice("How to say 'Fox' in Latvian?", ["Lapsa", "Galds", "Putns"], "Lapsa")
+question4 = MultipleChoice("How to say 'Water' in Latvian?", ["Gaisma", "Koks", "Ūdens"], "Ūdens")
+question5 = MultipleChoice("How to say 'Sun' in Latvian?", ["Paldies", "Zvaigzne", "Saule"], "Saule")
+question6 = MultipleChoice("How to say 'Table' in Latvian?", ["Krēsls", "Dators", "Galds"], "Galds")
+question7 = MultipleChoice("How to say 'Flower' in Latvian?", ["Flower", "Fruit", "Tree"], "Puķe")
+question8 = MultipleChoice("How to say 'Bird' in Latvian?", ["Saule", "Suns", "Putns"], "Putns")
+question9 = MultipleChoice("How to say 'House' in Latvian?", ["Ēka", "Ceļš", "Māja"], "Māja")
+question10 = MultipleChoice("How to say 'Tree' in Latvian?", ["Akmens", "Koks", "Metāls"], "Koks")
 
 questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10]
 
 while True:
-    print(username + ", Šodien mēs varam piedāvāt tev nokārtot multichoise (ievadi '1')")
+    print(username + ", Šodien mēs varam piedāvāt tev nokārtot Multichoise (ievadi '1')")
     print("Mīklas(2)")
     print('Tomēr, ja vēlies iziet (3) ')
-    start_game_panelka = input('Izvēle: ')
+    start_game_panelka = input('Jūsu izvēle (ievadiet numuru): ')
     if start_game_panelka == '1':
         print('Forši🌎')
         run_quiz(questions)
