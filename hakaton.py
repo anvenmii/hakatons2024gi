@@ -17,8 +17,6 @@ if sajuta.lower() == "labi" or sajuta.lower() == "izcili":
 else:
     print('Ceru, ka viss būs kārtībā')
 
-
-
 class Zagadki:
     def __init__(self, question, pareizi):
         self.question = question
@@ -59,9 +57,6 @@ def start_miklasgame():
         zagadka = Zagadki(question, answer)
         zagadka.asking()
 
-
-
-
 class MultipleChoice:
     def __init__(self, prompt, options, correct_answer):
         self.prompt = prompt
@@ -75,7 +70,6 @@ class MultipleChoice:
 
     def parbaude(self, atbildeliet):
         return self.options[atbildeliet - 1] == self.correct_answer
-
 
 def run_quiz(questions):
     score = 0
@@ -108,9 +102,6 @@ question10 = MultipleChoice("What does 'koks' mean?", ["Stone", "Tree", "Metal"]
 
 questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10]
 
-
-
-
 while True:
     print(username + ", Šodien mēs varam piedāvāt tev nokārtot multichoise (ievadi '1')")
     print("Mīklas(2)")
@@ -123,9 +114,7 @@ while True:
     if start_game_panelka == '2':
         print('Forši🧩')
         start_miklasgame()
-
-
-    
+        
     elif start_game_panelka == '3':
         print("Atā!")
         break
